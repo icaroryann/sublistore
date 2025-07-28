@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+:root {
+    --azul-escuro: #1709f6;
+    --azul-claro: #0489ff;
+
+    /********/
+    /* Font */
+    /********/
+    --font-raleway: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-raleway);
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(45deg, var(--azul-claro), var(--azul-escuro));
+    color: white;
+}
+
+header > *, header > * > * {
+    cursor: pointer;
+}
+
+header .menu i {
+    font-size: 2rem;
+}
+
+header span {
+    font-size: 2rem;
+}
+
+header span strong {
+    color: var(--azul-claro);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+}
+
+header .busca-carrinho i {
+    font-size: 2rem;
+}
