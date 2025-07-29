@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 :root {
+    /*********/
+    /* Cores */
+    /*********/
     --azul-escuro: #1709f6;
     --azul-claro: #0489ff;
 
@@ -27,13 +30,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-image: linear-gradient(45deg, var(--azul-claro), var(--azul-escuro));
     color: white;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.185);
 }
 
 header > *, header > * > * {
